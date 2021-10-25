@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+    --primary-color: rgb(12, 91, 182);
+    --primary-color-lighter: rgb(56, 145, 246);
+    --primary-color-darker: rgb(0, 47, 100);
+    --primary-font: font-family: 'Open Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+    font-family: var(--primary-font);
+    font-size: 1.3em;
+    line-height: 1.5rem;
+}
+
+.container {
+    max-width: 440px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+form input, form label, form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form input {
+    font-size: 24px;
+    height: 50px;
+    padding: 0 20px;
+}
+
+form input:focus {
+    outline: 1px solid var(--primary-color);
+}
+
+form button {
+    border: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+form button:hover {
+    background-color: var(--primary-color-darker);
+    transition: 500ms;
+}
+
+form button:active {
+    background-color: var(--primary-color-lighter);
+}
+
+.calculadora {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.display {
+    font-size: 2rem;
+    width: 100%;
+    text-align: right;
+    border-radius: 3px;
+    border: 1px solid #1f1d1d;
+    margin-bottom: 5px;
+}
+
+.display:hover {
+    background-color: #dfdfdf;
+}
+
+.btn {
+    width: 100%;
+    height: 40px;
+    font-size: 1.3rem;
+    border: none;
+    background: #dfdfdf;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #ada9a9;
+}
+
+.btn-eq {
+    background-color: royalblue;
+}
+
+.btn-eq:hover {
+    background-color: rgb(157, 172, 218);
+}
