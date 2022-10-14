@@ -1,15 +1,16 @@
 function calculadora() {
-    const input = document.querySelector('.calc__input');
-    const del = document.querySelector('#del');
+    const display = document.querySelector('.calc__input');
 
     document.addEventListener('click', (e) => {
-        input.value += e.target.value;
-
+        const elemento = e.target;
+        if(elemento.classList.contains('calc__clear')) {
+            limparDisplay();
+        }
     });
 
-    del.addEventListener('click', () => {
-        input.value = '';
-    });
+    function limparDisplay() {
+        display.value = '';
+    }
 }
 
 calculadora()
