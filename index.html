@@ -5,41 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/scss/output.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <title>Calculadora</title>
 </head>
 <body>
-    <div class="calc">
+    <main class="calc">
         <h1>Calculadora</h1>
         <input type="text" class="calc__input">
         <div class="calc__firstgroup">
             <input class="calc__clear" value="C"></input>
-            <input class="calc__operations" id="del" value="Del"></input>
-            <input class="calc__operations" value="*"></input>
+            <input class="calc__operations calc__del" id="del" value="Del"></input>
+            <input class="calc__operations calc__numbers" value="*"></input>
         </div>
         <div class="calc__group-numbers">
             <input type="input" class="calc__numbers" value="7"></input>
             <input class="calc__numbers" value="8"></input>
             <input class="calc__numbers" value="9"></input>
-            <input class="calc__operations" value="-"></input>
+            <input class="calc__operations calc__numbers" value="-"></input>
         </div>
         <div class="calc__group-numbers">
             <input class="calc__numbers" value="4"></input>
             <input class="calc__numbers" value="5"></input>
             <input class="calc__numbers" value="6"></input>
-            <input class="calc__operations" value="+"></input>
+            <input class="calc__operations calc__numbers" value="+"></input>
         </div>
         <div class="calc__group-numbers">
             <input class="calc__numbers" value="1"></input>
             <input class="calc__numbers" value="2"></input>
             <input class="calc__numbers" value="3"></input>
-            <input class="calc__operations" value="/"></input>
+            <input class="calc__operations calc__numbers" value="/"></input>
         </div>
         <div class="calc__group-numbers">
             <input class="calc__numbers" value="0"></input>
             <input class="calc__numbers" value="."></input>
             <input class="calc__eq" id="eq" value="="></input>
         </div>
-    </div>
+    </main>
+    <footer>
+        <p>Feito com &#128151 por <strong>Higor Chagas</strong></p>
+        <hr>
+        <p>Mais projetos no meu GitHub</p>
+        <div class="footer__icon">
+            <a href="https://github.com/HigorChagas" target="_blank"><i class="devicon-github-original colored"></i></a>
+        </div>
+        
+
+    </footer>
 
     <script src="assets/scripts/app.js"></script>
 </body>
