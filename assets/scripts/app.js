@@ -1,6 +1,12 @@
 function calculadora() {
     const display = document.querySelector('.calc__input');
 
+    document.addEventListener('keydown', (e) => {
+        if(e.key === 'Enter') {
+            calcular()
+        }
+    });
+
     document.addEventListener('click', (e) => {
         const elemento = e.target;
         if(elemento.classList.contains('calc__clear')) {
@@ -34,17 +40,7 @@ function calculadora() {
         } else {
             display.value = eval(conta);
         }
-    }
-
-    (function() {
-        display.addEventListener('keydown', (e) => {
-            if(e.keyCode === 13) {
-                console.log('Testando evento');
-            }
-        });
-    })();
-    
+    } 
 }
-
 
 calculadora();
