@@ -6,6 +6,7 @@ $keys-color: #0C2835;
 $operation-colors: #0F8B8D;
 $eq-color: #166d00;
 $border-color: #000;
+$align: center;
 
 
 /* Calculadora */
@@ -54,6 +55,8 @@ h1 {
     border-radius: 5px;
     caret-color: transparent;
     margin: 0.6px;
+    text-align: $align;
+    border: 2px solid $border-color;
 }
 
 .calc__group-numbers {
@@ -72,6 +75,8 @@ h1 {
     border-radius: 5px;
     caret-color: transparent;
     margin: 0.6px;
+    text-align: $align;
+    border: 2px solid $border-color;
 }
 
 .calc__operations {
@@ -82,6 +87,8 @@ h1 {
     font-size: 18px;
     border-radius: 5px;
     caret-color: transparent;
+    border: 2px solid $border-color;
+    text-align: $align;
 }
 
 .calc__eq {
@@ -93,6 +100,8 @@ h1 {
     cursor: pointer;
     caret-color: transparent;
     margin: 0.6px;
+    border: 2px solid $border-color;
+    text-align: $align;
 }
 
 footer {
