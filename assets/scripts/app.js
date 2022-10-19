@@ -15,9 +15,6 @@ function calculadora() {
         if(elemento.classList.contains('calc__eq')) {
             calcular();
         }
-        if(enter()) {
-            console.log('Testando evento.')
-        }
     });
 
     const limparDisplay = () => {
@@ -39,13 +36,15 @@ function calculadora() {
         }
     }
 
-    const enter = () => {
-        display.addEventListener('keyup', (e) => {
+    (function() {
+        display.addEventListener('keydown', (e) => {
             if(e.keyCode === 13) {
                 console.log('Testando evento');
             }
-        })
-    }
+        });
+    })();
+    
 }
+
 
 calculadora();
