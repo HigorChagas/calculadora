@@ -7,6 +7,12 @@ function calculadora() {
         }
     });
 
+    document.addEventListener('keydown', (e) => {
+        if(e.key === 'Backspace') {
+            apagarNumero();
+        }
+    });
+
     document.addEventListener('click', (e) => {
         const elemento = e.target;
         if(elemento.classList.contains('calc__clear')) {
