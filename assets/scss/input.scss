@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+
 /* Variáveis */
 $primary-font: Helvetica, sans-serif;
 $c-button-color: #AD7D59;
@@ -7,6 +9,7 @@ $operation-colors: #F1ECE6;
 $eq-color: #2A4934;
 $border-color: #000;
 $align: center;
+$font: 'Crete Round', serif;
 
 
 /* Calculadora */
@@ -21,7 +24,9 @@ body {
 h1 {
     text-align: center;
     color: white;
-
+    font-family: $font;
+    font-size: 2rem;
+    letter-spacing: 4px;
 }
 
 .calc {
@@ -48,7 +53,7 @@ h1 {
 
 .calc__firstgroup {
     display: flex;
-    padding: 2px;
+    padding: 2px 4px;
 }
 
 .calc__clear {
@@ -68,7 +73,7 @@ h1 {
 
 .calc__group-numbers {
     display: flex;
-    padding: 2px;
+    padding: 2px 4px;
     padding-top: 0;
 }
 
@@ -78,7 +83,7 @@ h1 {
     color: $numbers-color;
     background-color: $keys-color;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 20px;
     border-radius: 5px;
     caret-color: transparent;
     margin: 0.6px;
