@@ -7,6 +7,38 @@ function calculadora() {
         }
     });
 
+    document.addEventListener('keydown', (e) => {
+        switch(e.code) {
+            case 'Numpad0':
+                display.value += 0;
+                break;
+            case 'Numpad1':
+                display.value += 1;
+                break;
+            case 'Numpad2':
+                display.value += 2;
+                break;
+            case 'Numpad3':
+                display.value += 3;
+                break;
+            case 'Numpad4':
+                display.value += 4;
+                break;
+            case 'Numpad5':
+                display.value += 5;
+                break;
+            case 'Numpad6':
+                display.value += 6;
+                break;
+            case 'Numpad7':
+                display.value += 7;
+                break;
+            case 'Numpad8':
+                display.value += 8;
+                break;
+        }
+    });
+
     document.addEventListener('click', (e) => {
         const elemento = e.target;
         if(elemento.classList.contains('calc__clear')) {
