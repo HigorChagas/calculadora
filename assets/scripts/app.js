@@ -36,6 +36,9 @@ function calculadora() {
             case 'Numpad8':
                 display.value += 8;
                 break;
+            case 'Numpad9':
+                display.value += 9;
+                break;
         }
     });
 
