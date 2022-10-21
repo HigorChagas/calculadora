@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+
 /* Variáveis */
 $primary-font: Helvetica, sans-serif;
-$c-button-color: #FF3077;
-$numbers-color: #fff;
-$keys-color: #0C2835;
-$operation-colors: #0F8B8D;
-$eq-color: #166d00;
+$c-button-color: #AD7D59;
+$numbers-color: #000;
+$keys-color: #C1BEAE;
+$operation-colors: #F1ECE6;
+$eq-color: #2A4934;
 $border-color: #000;
 $align: center;
+$font: 'Crete Round', serif;
 
 
 /* Calculadora */
@@ -20,36 +23,44 @@ body {
 
 h1 {
     text-align: center;
+    color: white;
+    font-family: $font;
+    font-size: 2rem;
+    letter-spacing: 4px;
 }
 
 .calc {
     width: 500px;
-    margin: 25px auto;
+    margin: 65px auto;
     border-radius: 5px;
     border: 1px solid black;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: rgb(91, 91, 91);
 }
 
 .calc__input {
     width: 490px;
     height: 50px;
     display: block;
-    margin: 0 auto;
+    margin: 15px auto;
     font-size: 30px;
     border-radius: 5px;
     text-align: right;
     caret-color: transparent;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) inset, 0 6px 20px 0 rgba(0, 0, 0, 0.19) inset;
+    border: 2px solid $border-color;
 }
 
 .calc__firstgroup {
     display: flex;
-    padding: 2px;
+    padding: 2px 4px;
 }
 
 .calc__clear {
-    width: 50%;
+    width: 52%;
     height: 65px;
     background-color: $c-button-color;
+    font-size: 16px;
     color: $numbers-color;
     cursor: pointer;
     border-radius: 5px;
@@ -57,11 +68,12 @@ h1 {
     margin: 0.6px;
     text-align: $align;
     border: 2px solid $border-color;
+    font-weight: bold;
 }
 
 .calc__group-numbers {
     display: flex;
-    padding: 2px;
+    padding: 2px 4px;
     padding-top: 0;
 }
 
@@ -71,30 +83,45 @@ h1 {
     color: $numbers-color;
     background-color: $keys-color;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 20px;
     border-radius: 5px;
     caret-color: transparent;
     margin: 0.6px;
     text-align: $align;
     border: 2px solid $border-color;
+    font-weight: bold;
 }
 
 .calc__operations {
     width: 25%;
     cursor: pointer;
     background-color: $operation-colors;
-    color: white;
-    font-size: 18px;
+    color: $numbers-color;
+    font-size: 26px;
     border-radius: 5px;
     caret-color: transparent;
     border: 2px solid $border-color;
     text-align: $align;
+    font-weight: bold;
+}
+
+.calc__del {
+    width: 25%;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 0.6px;
+    caret-color: transparent;
+    font-weight: bold;
+    text-align: center;
+    background-color: $operation-colors;
+    border: 2px solid $border-color;
 }
 
 .calc__eq {
     background-color: $eq-color;
-    width: 50%;
-    color: $numbers-color;
+    width: 52%;
+    color: white;
     font-size: 18px;
     border-radius: 5px;
     cursor: pointer;
@@ -102,6 +129,7 @@ h1 {
     margin: 0.6px;
     border: 2px solid $border-color;
     text-align: $align;
+    font-weight: bold;
 }
 
 footer {
