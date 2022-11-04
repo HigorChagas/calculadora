@@ -1,0 +1,149 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&display=swap");
+/* Variáveis */
+/* Calculadora */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  font: Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-family: "Crete Round", serif;
+  font-size: 2rem;
+  letter-spacing: 4px;
+}
+
+.calc {
+  width: 500px;
+  margin: 65px auto;
+  border-radius: 5px;
+  border: 1px solid black;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: rgb(91, 91, 91);
+}
+
+.calc__input {
+  width: 490px;
+  height: 50px;
+  display: block;
+  margin: 15px auto;
+  font-size: 30px;
+  border-radius: 5px;
+  text-align: right;
+  caret-color: transparent;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) inset, 0 6px 20px 0 rgba(0, 0, 0, 0.19) inset;
+  border: 2px solid #000;
+  background-color: white;
+  color: #000;
+}
+
+.calc__firstgroup {
+  display: flex;
+  padding: 2px 4px;
+}
+
+.calc__clear {
+  width: 52%;
+  height: 65px;
+  background-color: #AD7D59;
+  font-size: 16px;
+  color: #000;
+  cursor: pointer;
+  border-radius: 5px;
+  caret-color: transparent;
+  margin: 0.6px;
+  text-align: center;
+  border: 2px solid #000;
+  font-weight: bold;
+}
+
+.calc__group-numbers {
+  display: flex;
+  padding: 2px 4px;
+  padding-top: 0;
+}
+
+.calc__numbers {
+  width: 25%;
+  height: 65px;
+  color: #000;
+  background-color: #C1BEAE;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 5px;
+  caret-color: transparent;
+  margin: 0.6px;
+  text-align: center;
+  border: 2px solid #000;
+  font-weight: bold;
+}
+
+.calc__operations {
+  width: 25%;
+  cursor: pointer;
+  background-color: #F1ECE6;
+  color: #000;
+  font-size: 26px;
+  border-radius: 5px;
+  caret-color: transparent;
+  border: 2px solid #000;
+  text-align: center;
+  font-weight: bold;
+}
+
+.calc__del {
+  width: 25%;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 0.6px;
+  caret-color: transparent;
+  font-weight: bold;
+  text-align: center;
+  background-color: #F1ECE6;
+  border: 2px solid #000;
+}
+
+.calc__eq {
+  background-color: #2A4934;
+  width: 52%;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  caret-color: transparent;
+  margin: 0.6px;
+  border: 2px solid #000;
+  text-align: center;
+  font-weight: bold;
+}
+
+footer {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+hr {
+  width: 150px;
+}
+
+p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 5px;
+}
+
+.footer__icon {
+  text-align: center;
+}
+
+.footer__icon i {
+  font-size: 2rem;
+}
+
+/*# sourceMappingURL=output.css.map */
