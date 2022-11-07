@@ -15,7 +15,7 @@ function calculadora() {
                 break;
             case 'Numpad0':
             case 'Digit0':
-                display.value += 0;
+                display.ariaValueNow += 0;
                 break;
             case 'Numpad1':
             case 'Digit1':
@@ -55,6 +55,7 @@ function calculadora() {
                 break;
             case 'NumpadAdd':
                 display.value += '+';
+                validarSinais(display);
                 break;
             case 'NumpadMultiply':
                 display.value += '*';
@@ -79,6 +80,7 @@ function calculadora() {
         }
         if(elemento.classList.contains('calc__numbers')) {
             display.value += elemento.value;
+            validarSinais(display)
         }
         if(elemento.classList.contains('calc__del')) {
             apagarNumero();
@@ -106,6 +108,14 @@ function calculadora() {
             display.value = eval(conta);
         }
     } 
+
+    const validarSinais = (sinal) => {
+        if(sinal.value.indexOf('+') !== -1) {
+            console.log('Testando sinal de soma');
+        } else if (sinal.value.indexOf('-') !== -1){
+            console.log('Testando sinal de subtração');
+        }
+    }
 }
 
 calculadora();
