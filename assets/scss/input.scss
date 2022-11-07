@@ -50,7 +50,8 @@ h1 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) inset, 0 6px 20px 0 rgba(0, 0, 0, 0.19) inset;
     border: 2px solid $border-color;
     background-color: white;
-    color: $numbers-color
+    color: $numbers-color;
+    letter-spacing: 3px;
 }
 
 .calc__firstgroup {
