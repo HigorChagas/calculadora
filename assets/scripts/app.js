@@ -62,6 +62,7 @@ function calculadora() {
                 break
             case 'NumpadSubtract': 
                 display.value += '-';
+                validarSinais(display);
                 break;
             case 'NumpadDivide':
                 display.value += '/';
@@ -112,9 +113,11 @@ function calculadora() {
     const validarSinais = (sinal) => {
         if(sinal.value.indexOf('+') !== -1) {
             console.log('Testando sinal de soma');
-        } else if (sinal.value.indexOf('-') !== -1){
+        } else if (sinal.value.indexOf('-') !== -1) {
             console.log('Testando sinal de subtração');
-        }
+        } else if(sinal.value.indexOf('/') !== -1) {
+            console.log('Testando sinal de divisão'); 
+        } 
     }
 }
 
