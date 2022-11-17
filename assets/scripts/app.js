@@ -111,13 +111,13 @@ function calculadora() {
     } 
 
     const validarSinais = (sinal) => {
-        if(sinal.value.indexOf('+') !== -1) {
-            console.log('Testando sinal de soma');
-        } else if (sinal.value.indexOf('-') !== -1) {
-            console.log('Testando sinal de subtração');
-        } else if(sinal.value.indexOf('/') !== -1) {
-            console.log('Testando sinal de divisão'); 
-        } 
+        const operations = ['+', '-', '*', '/'];
+        const operatorsArr = sinal.value.split('');
+        for(let elements of operations) {
+            if(operatorsArr.includes(elements)){
+                
+            }
+        }
     }
 }
 
