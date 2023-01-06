@@ -112,10 +112,11 @@ function calculadora() {
 
     const validarSinais = (sinal) => {
         const operations = ['+', '-', '*', '/'];
-        if(display.includes(operations)) {
-            console.log('Testando');
-        }
-        
+        operations.forEach(operation => {
+            if(operation) {
+                console.log('testando')
+            }
+        });
     }
 }
 
