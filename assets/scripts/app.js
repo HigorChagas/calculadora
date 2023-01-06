@@ -115,7 +115,7 @@ function calculadora() {
         const operatorsArr = sinal.value.split('');
         for(let elements of operations) {
             if(operatorsArr.includes(elements)){
-                
+                    
             }
         }
     }
