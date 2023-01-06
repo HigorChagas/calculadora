@@ -112,7 +112,9 @@ function calculadora() {
 
     const validarSinais = (sinal) => {
         const operations = ['+', '-', '*', '/'];
-        const operatorsArr = sinal.value.split('');
+        if(display.includes(operations)) {
+            console.log('Testando');
+        }
         
     }
 }
