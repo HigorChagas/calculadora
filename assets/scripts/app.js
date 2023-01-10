@@ -1,4 +1,5 @@
 function calculadora() {
+    
     const display = document.querySelector('.calc__input');
 
     document.addEventListener('keydown', (e) => {
