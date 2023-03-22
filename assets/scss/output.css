@@ -17,16 +17,50 @@ h1 {
     letter-spacing: 4px;
 }
 
+footer {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+@media (max-width: 720px) {
+    footer {
+        max-width: 100%;
+        margin: 0;
+    }
+}
+hr {
+    width: 150px;
+}
+
+p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 5px;
+}
+
 /* Calculadora */
 .calc {
     width: 500px;
     margin: 45px auto;
     border-radius: 5px;
-    border: 1px solid black;
+    border: 1px solid #000;
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background: rgb(91, 91, 91);
 }
 
+@media (max-width: 768px) {
+    .calc {
+        width: 450px;
+        margin: 20px auto;
+    }
+}
+@media (max-width: 480px) {
+    .calc {
+        width: 200px;
+        margin: 10px auto;
+        padding: 10px;
+    }
+}
 .calc__input {
     width: 490px;
     height: 50px;
@@ -124,21 +158,6 @@ h1 {
     border: 2px solid #000;
     text-align: center;
     font-weight: bold;
-}
-
-footer {
-    max-width: 720px;
-    margin: 0 auto;
-}
-
-hr {
-    width: 150px;
-}
-
-p {
-    font-size: 1.2rem;
-    text-align: center;
-    margin: 5px;
 }
 
 .footer__icon {
