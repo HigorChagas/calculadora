@@ -90,6 +90,21 @@ p {
     letter-spacing: 3px;
 }
 
+@media (max-width: 768px) {
+    .calc__input {
+        width: 420px;
+        margin: 20px auto;
+    }
+}
+@media (max-width: 480px) {
+    .calc__input {
+        width: 100%;
+        height: 30px;
+        margin: 10px auto;
+        padding: 10px;
+    }
+}
+
 .calc__firstgroup {
     display: flex;
     padding: 2px 4px;
