@@ -7,7 +7,10 @@ Calculadora de operações básicas feita em JavaScript.
 
 ![](calculadora.gif)
 
-## Como usar
+## Link para o App
+[Calculadora](https://github.com/HigorChagas/calculator/blob/main/README.md)
+
+## Caso queira clonar o App
 
 - Clone o repositório
 
