@@ -8,7 +8,7 @@ Calculadora de operações básicas feita em JavaScript.
 ![](calculadora.gif)
 
 ## Link para o App
-[Calculadora](https://github.com/HigorChagas/calculator/blob/main/README.md)
+[Calculadora](https://calculadora-netlify.netlify.app/)
 
 ## Caso queira clonar o App
 
