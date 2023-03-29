@@ -36,7 +36,9 @@ class Calculadora {
             } else if (/NumpadMultiply|NumpadDivide/.test(e.code)) {
                 this.display.value += e.key;
             } else if (/NumpadComma|Period/.test(e.code)) {
-                this.display.value += '.';
+                if (!this.display.value.includes('.') && !this.display.value.includes(',')) {
+                    this.display.value += '.';
+                }
             }
         });
     }
