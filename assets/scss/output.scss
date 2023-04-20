@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
 
-/* Variáveis */
+/* Variables */
 $primary-font: Helvetica, sans-serif;
 $c-button-color: #ad7d59;
 $numbers-color: #000;
@@ -11,7 +11,7 @@ $border-color: #000;
 $align: center;
 $font: 'Crete Round', serif;
 
-/* Estilos gerais */
+/* General Styles */
 body {
     margin: 0;
     padding: 0;
@@ -48,7 +48,7 @@ p {
     text-align: center;
     margin: 5px;
 }
-/* Calculadora */
+/* Calculator */
 .calc {
     width: 500px;
     margin: 45px auto;
