@@ -4,9 +4,9 @@ class Calculator {
 
         document.addEventListener('click', (event) => {
             const element = event.target;
+            const lastCharacter = this.display.value.slice(-1);
 
             if (element.classList.contains('calc__operations')) {
-                const lastCharacter = this.display.value.slice(-1);
                 if (/[\+\-\*/]/.test(lastCharacter)) {
                     return;
                 }
@@ -16,6 +16,11 @@ class Calculator {
                 this.clearDisplay();
             }
             if (element.classList.contains('calc__numbers')) {
+                if(element.value === '.') {
+                    if(this.display.value.includes('.') && !/[+\-*/]/.test(lastCharacter)) {
+                        return;
+                    }
+                }
                 return (this.display.value += element.value);
             }
             if (element.classList.contains('calc__del')) {
