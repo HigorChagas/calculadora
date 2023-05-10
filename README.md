@@ -1,29 +1,29 @@
 
-# Calculadora em JavaScript
+# Calculator in Vanilla JavaScript
 
-Calculadora de operações básicas feita em JavaScript.
+Link to the App
 
-## Demonstração
+## Demonstration
 
 ![](calculadora.gif)
 
-## Link para o App
+## Link to the App
 [Calculadora](https://calculadora-netlify.netlify.app/)
 
-## Caso queira clonar o App
+## If you want to clone the App
 
-- Clone o repositório
+- Clone the repository
 
 <code>git clone https://github.com/HigorChagas/calculator.git</code>
 
-- O CSS está no arquivo <code>output.css</code>
+- The CSS is in the <code>output.css</code> file
 
-- Caso queira utilizar o Sass como processador do CSS, será necessário instalar o Sass (pode ser pelo Chocolatey) e executar:
+- If you want to use Sass as the CSS processor, you will need to install Sass (it can be done through Chocolatey) and run::
 <code>npm install</code>
 
-- Para compilar o Sass, vá até o diretório do arquivo <code>cd/assets/scss</code> e execute <code>sass --watch input.scss output.css</code> ou você pode instalar a extensão <code>Live Sass Compiler</code> e deixar a extensão realizar a compilação do Sass.
+- To compile Sass, go to the directory of the file <code>cd/assets/scss</code> and run <code>sass --watch input.scss output.css</code> or you can install the <code>Live Sass Compiler</code> extension and let the extension compile the Sass.
 
-## Autores
+## Authors
 
 - [@HigorChagas](https://github.com/HigorChagas)
 
