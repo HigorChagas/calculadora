@@ -1,8 +1,6 @@
 
 # Calculator in Vanilla JavaScript
 
-Link to the App
-
 ## Demonstration
 
 ![](calculadora.gif)
