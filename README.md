@@ -1,29 +1,41 @@
 
-# Calculator in Vanilla JavaScript
-
-## Demonstration
+# Calculadora em JavaScript puro
 
 ![](calculadora.gif)
 
-## Link to the App
-[Calculadora](https://calculadora-netlify.netlify.app/)
+## Descrição
+Este é um projeto de uma calculadora simples desenvolvida em JavaScript puro, sem o uso de bibliotecas ou frameworks adicionais. A calculadora permite realizar operações básicas de adição, subtração, multiplicação e divisão.
 
-## If you want to clone the App
+## Demonstração
+Para ver a calculadora em funcionamento, acesse o seguinte link: [Calculadora](https://calculadora-netlify.netlify.app/)
 
-- Clone the repository
+## Clonando o repositório
 
-<code>git clone https://github.com/HigorChagas/calculator.git</code>
+Se você deseja testar ou contribuir para o projeto, você pode clonar o repositório executando o seguinte comando em seu terminal: <code>git clone https://github.com/HigorChagas/calculator.git</code>
 
-- The CSS is in the <code>output.css</code> file
+## Estilos CSS
+O CSS está no arquivo: <code>output.css</code>
 
-- If you want to use Sass as the CSS processor, you will need to install Sass (it can be done through Chocolatey) and run::
-<code>npm install</code>
+## Usando Sass (opcional)
+Se você deseja usar Sass como o processador de CSS, siga os passos abaixo:
+1. Certifique-se de que você tenha o Sass instalado em seu ambiente de desenvolvimento. Caso ainda não tenha, você pode instalá-lo através do Chocolatey:
+   `npm install`
+2. Para compilar o Sass, vá para o diretório `cd/assets/scss` e execute o seguinte comando:
+   `sass --watch input.scss output.css`
+Outra opção é instalar a extensão `Live Sass Compiler` em seu editor de código e deixar a extensão compilar o Sass automaticamente.
 
-- To compile Sass, go to the directory of the file <code>cd/assets/scss</code> and run <code>sass --watch input.scss output.css</code> or you can install the <code>Live Sass Compiler</code> extension and let the extension compile the Sass.
+## Contribuindo
 
-## Authors
+Contribuições são bem-vindas! Caso deseje contribuir com o projeto, por favor, crie uma branch para suas alterações e envie um pull request.
+
+## Licença
+Este projeto está licenciado sob a Licença MIT.
+
+## Autores
 
 - [@HigorChagas](https://github.com/HigorChagas)
+
+Espero que você goste da calculadora e divirta-se explorando o código! 🚀
 
 
 
