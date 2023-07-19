@@ -29,7 +29,7 @@ Outra opção é instalar a extensão `Live Sass Compiler` em seu editor de cód
 Contribuições são bem-vindas! Caso deseje contribuir com o projeto, por favor, crie uma branch para suas alterações e envie um pull request.
 
 ## Licença
-Este projeto está licenciado sob a Licença MIT.
+Este projeto está licenciado sob a [Licença MIT](LICENSE).
 
 ## Autores
 
