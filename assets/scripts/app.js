@@ -30,6 +30,7 @@ class Calculator {
       return this.digitDelete();
     }
     if (element.classList.contains("calc__eq")) {
+      if (this.display.value === "") return;
       return this.calculate();
     }
   }
@@ -55,6 +56,7 @@ class Calculator {
       return (this.display.value += ".");
     }
     if (/Enter|NumpadEnter/.test(event.code)) {
+      if (this.display.value === "") return;
       return this.calculate();
     }
   }
